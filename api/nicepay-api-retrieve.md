@@ -288,7 +288,7 @@ Content-type: application/json;charset=utf-8
 | Parameter |   Type   |  Required   |  Bytes  | Description  |
 |:--------------|:----:|:-----:|:-----:|:--------|
 | amount | Int | O | 12 | payment amount |
-| useAuth       |  Boolean   |   O   |   -   | true : checkout or payment window <br> false : billing or key-in  |
+| useAuth       |  Boolean   |   O   |   -   | true : checkout or payment window <br> false : non-authenticated  |
 | ediDate      | String    |  O | -         | Full Text Creation Date<br>ISO 8601 Format |
 | mid           |  String   |   　   |  10   | [Optional] Merchant ID separately contracted with Nice Payments |
 | signData      | String    |       | 256       | Forgery Verification Data<br>Generation rule: hex(sha256(ediDate + SecretKey) |
@@ -352,7 +352,7 @@ Content-type: application/json;charset=utf-8
 
 | Parameter     |   Type   |  Required   |  Bytes  | Description  |
 |:--------------|:---------:|:-----:|:------:|:--------|
-| useAuth       |  Boolean   |   O   |   -   | true : checkout or payment window <br> false : billing or key-in  |
+| useAuth       |  Boolean   |   O   |   -   | true : checkout or payment window <br> false : non-authenticated  |
 | ediDate  | String    |   | -         | Full Text Creation Date<br>ISO 8601 Format |
 | mid           |  String   |   　   |  10   | [Optional] Merchant ID separately contracted with Nice Payments |
 | signData      | String    |       | 256       | Forgery Verification Data<br>Generation rule: hex(sha256(ediDate + SecretKey) |
