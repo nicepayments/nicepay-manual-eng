@@ -34,9 +34,6 @@ Sandbox responds with TEST data, and no actual approval occurs.
 | Create checkout session                         | POST   | /v1/checkout                             | ○                  |
 | Retrive checkout session                        | GET    | /v1/checkout/{sessionId}                 | ○                  |
 | Expire checkout session                         | POST   | /v1/checkout/{sessionId}/expire          | ○                  |
-| Recurring payment: Token Issue                  | POST   | /v1/subscribe/regist                     | ○                  |
-| Recurring Payment: Token authorization          | POST   | /v1/subscribe/{bid}/payments             | ○                  |
-| Recurring Payment: Token delete                 | POST   | /v1/subscribe/{bid}/expire               | ○                  |
 | AccessToken Generation                          | POST   | /v1/access-token                         | ○                  |
 | Cancel request with session id                  | POST   | /v1/payments/checkout/{sessionId}/cancel | full   cancel only |
 | Cancel request with tid                         | POST   | /v1/payments/{tid}/cancel                | full   cancel only |
